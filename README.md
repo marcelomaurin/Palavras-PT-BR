@@ -1,6 +1,3 @@
-# Palavras-PT-BR
-Lista de palavras em português
-
 # Lista de palavras PT-BR
 
 Este repositório contém uma lista de palavras em português brasileiro, ideal para ser utilizado em diversos projetos e aplicações que necessitam de um conjunto abrangente de palavras da língua portuguesa.
