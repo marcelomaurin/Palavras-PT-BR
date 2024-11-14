@@ -1,6 +1,7 @@
 def ler_arquivo(nome_arquivo):
     lista = []
-    with open(nome_arquivo, 'r') as arquivo:
+    #with open(nome_arquivo, 'r') as arquivo:  #modifiquei aqui
+    with open(nome_arquivo, 'r', encoding='utf-8', errors='ignore') as arquivo:
         for linha in arquivo:
             palavra = linha.strip().strip("'")
             lista.append(palavra)
@@ -9,8 +10,9 @@ def ler_arquivo(nome_arquivo):
 def remover_duplicatas(lista):
     return list(set(lista))
 
+#pequena modificacao na funcao
 def salvar_arquivo(nome_arquivo, conteudo):
-    with open(nome_arquivo, 'w') as arquivo:
+    with open(nome_arquivo, 'w', encoding='utf-8') as arquivo:
         arquivo.write('\n'.join(conteudo))
 
 # Lista de arquivos a serem somados
